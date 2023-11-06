@@ -1,4 +1,4 @@
-import logo from '../../assets/Logo Indicadores Chile.png'
+import logo from '../../assets/Logo Indicadores Chile.webp'
 const Header = () => {
   return (
     <div className="container mx-auto mt-6">

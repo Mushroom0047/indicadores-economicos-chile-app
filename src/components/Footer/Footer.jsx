@@ -1,4 +1,4 @@
-import logoHV from "../../assets/logo-hector-valdes.png";
+import logoHV from "../../assets/logo-hector-valdes.webp";
 
 export const Footer = () => {
   return (

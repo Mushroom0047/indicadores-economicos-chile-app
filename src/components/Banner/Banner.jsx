@@ -1,5 +1,6 @@
-import rocketImage from "../../assets/Rocket-image.png";
+import rocketImage from "../../assets/Rocket-image.webp";
 import { Donation } from "../Donation/Donation";
+import { Splide, SplideSlide } from '@splidejs/react-splide';
 
 const Banner = () => {
   return (

@@ -1,5 +1,5 @@
 import { FaqsAccordion } from "./FaqsAccordion"
-import RocketGirl from "../../assets/rocket-girl.png"
+import RocketGirl from "../../assets/rocket-girl.webp"
 
 export const Faqs = () => {
   return (

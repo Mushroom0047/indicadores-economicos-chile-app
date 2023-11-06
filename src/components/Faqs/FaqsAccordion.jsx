@@ -1,7 +1,8 @@
 
 
+
 export const FaqsAccordion = () => {
-    return(
-        <>FAQS</>
-    );
-  };
+return(
+    <div>faw</div>
+)
+}
