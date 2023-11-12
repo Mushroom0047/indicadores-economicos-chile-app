@@ -8,10 +8,10 @@ const Values = () => {
   // const uf = data ? data.uf : null;
   
   return (
-    <div className="container mx-auto text-center bg-green-300">
-      <h2>VALORES HOY</h2>
+    <div className="mx-auto text-center mb-24 px-28">
+      <h2 className="text-teal-300">VALORES HOY</h2>
       <p>{date}</p>
-      <div className="w-full flex flex-row gap-12 justify-center bg-slate-400">        
+      <div className="w-full flex flex-row gap-12 justify-center pt-7">        
       {
         data &&(
           <>

@@ -1,31 +1,30 @@
 import { FaqsAccordion } from "./FaqsAccordion"
 import RocketGirl from "../../assets/rocket-girl.webp"
+import bigCircle from '../../assets/Ellipse 6.png';
 
 export const Faqs = () => {
-  const items = [
-    {
-      question: 'Pregunta 1',
-      answer: 'Respuesta 1',
-    },
-    {
-      question: 'Pregunta 2',
-      answer: 'Respuesta 2',
-    },
-    // Agrega más preguntas y respuestas según tus necesidades
-  ];
+
   return (
-    <div className="container mx-auto text-center">
-        <h2>PREGUNTAS FRECUENTES</h2>
-        <div className="container flex flex-row">
-            <div className="w-1/2 bg-yellow-200">
-                <FaqsAccordion items={items} />
-            </div>
-            <div className="w-1/2 bg-orange-300">
-            <img 
-            src={RocketGirl} 
-            alt="decoration image rocket girl" />
-            </div>
+    <div className="w-full mx-auto text-center">
+      <img
+        src={bigCircle}
+        alt="bg image decoration"
+        className="absolute right-0 -z-10"
+        width={500}
+      />
+      <h2 className="text-center text-5xl">PREGUNTAS FRECUENTES</h2>
+      <div className="flex ps-28">
+        <div className="w-1/2 mt-28">
+          <FaqsAccordion />
         </div>
+        <div className="w-1/2">
+          <img
+            src={RocketGirl}
+            alt="decoration image rocket girl" 
+            
+            />
+        </div>
+      </div>
     </div>
   )
 }

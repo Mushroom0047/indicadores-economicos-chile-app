@@ -7,6 +7,7 @@ import { Footer } from "./components/Footer/Footer"
 import Header from "./components/Header/Header"
 import Values from "./components/Values/Values"
 import '@splidejs/react-splide/css';
+import './App.css';
 
 function App() {
 

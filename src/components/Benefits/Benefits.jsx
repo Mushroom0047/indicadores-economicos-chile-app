@@ -1,5 +1,5 @@
-import { Splide, SplideSlide } from '@splidejs/react-splide';
 import './benefits.css';
+import { Carousel } from "@material-tailwind/react";
 
 import cap01 from '../../assets/capturas extension/capturas extension indicadores economicos chile 600x600.webp';
 import cap02 from '../../assets/capturas extension/capturas extension indicadores economicos chile 600x600 (2).webp';
@@ -8,38 +8,51 @@ import cap03 from '../../assets/capturas extension/capturas extension indicadore
 const Benefits = () => {
     const altCaptures = 'capturas extension indicadores economicos chile 600x600';
     return (
-        <div className="container flex flex-wrap mx-auto">
+        <div className="container flex flex-wrap mx-auto mb-24">
             <div className="w-1/2">
-                <Splide aria-label="My Favorite Images"
-                options={ {
-                    rewind: true,
-                    width : 600,
-                    gap   : '1rem',
-                  } }>
-                    <SplideSlide>
-                        <img src={cap01} alt={altCaptures} />
-                    </SplideSlide>
-                    <SplideSlide>
-                        <img src={cap02} alt={altCaptures} />
-                    </SplideSlide>
-                    <SplideSlide>
-                        <img src={cap03} alt={altCaptures} />
-                    </SplideSlide>
-                </Splide>
+                <Carousel className="rounded-xl" loop>
+                    <img
+                        src={cap01}
+                        alt={altCaptures}
+                        className="h-full w-full object-cover"
+                    />
+                    <img
+                        src={cap02}
+                        alt={altCaptures}
+                        className="h-full w-full object-cover"
+                    />
+                    <img
+                        src={cap03}
+                        alt={altCaptures}
+                        className="h-full w-full object-cover"
+                    />
+                </Carousel>
             </div>
-            <div className="w-1/2 px-16 flex flex-col justify-around bg-red-400">
-                <h2 className="text-center">BENEFICIOS</h2>
-                <div className="flex flex-row justify-around w-100 bg-cyan-300">
-                    <i className="gg-time"></i>
-                    <p>Beneficios</p>
+            <div className="w-1/2 px-16 flex flex-col justify-around items-center">
+                <h2 className="text-center text-5xl">BENEFICIOS</h2>
+                <div className="flex flex-row justify-between w-2/3 items-center">
+                    <div className="w-1/2">
+                        <i className="gg-time"></i>
+                    </div>
+                    <div className="w-1/2">
+                        <p>Rápida entrega de resultados</p>
+                    </div>
                 </div>
-                <div className="flex flex-row justify-around w-100">
-                    <i className="gg-browser "></i>
-                    <p>Beneficios</p>
+                <div className="flex flex-row justify-between w-2/3">
+                    <div className="w-1/2">
+                        <i className="gg-browser "></i>
+                    </div>
+                    <div className="w-1/2">
+                        <p>Interfaz fácil de usar</p>
+                    </div>
                 </div>
-                <div className="flex flex-row justify-around w-100">
-                    <i className="gg-sync"></i>
-                    <p>Beneficios</p>
+                <div className="flex flex-row justify-between w-2/3">
+                    <div className="w-1/2">
+                        <i className="gg-sync"></i>
+                    </div>
+                    <div className="w-1/2">
+                        <p>Conversor integrado</p>
+                    </div>
                 </div>
             </div>
         </div>

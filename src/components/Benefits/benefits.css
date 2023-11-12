@@ -1,17 +1,19 @@
 /*!Icon time*/
 .gg-time {
+    color: #3BBA9C;
     box-sizing: border-box;
     position: relative;
     display: block;
-    transform: scale(var(--ggs,1));
+    transform: scale(var(--ggs,1.5));
     width: 18px;
     height: 18px;
     border-radius: 100%;
     border: 2px solid transparent;
-    box-shadow: 0 0 0 2px currentColor
+    box-shadow: 0 0 0 2px currentColor;
    }
    
    .gg-time::after {
+    color: #3BBA9C;
     content: "";
     display: block;
     box-sizing: border-box;
@@ -26,10 +28,11 @@
 
    /*!Icon easy to use*/
    .gg-browser {
+    color: #3BBA9C;
     box-sizing: border-box;
     position: relative;
     display: block;
-    transform: scale(var(--ggs,1));
+    transform: scale(var(--ggs,1.5));
     width: 24px;
     height: 18px;
     border: 2px solid;
@@ -60,10 +63,11 @@
 
    /*!Currency converter icon*/
    .gg-sync {
+    color: #3BBA9C;
     box-sizing: border-box;
     position: relative;
     display: block;
-    transform: scale(var(--ggs,1));
+    transform: scale(var(--ggs,1.5));
     border-radius: 40px;
     border: 2px solid;
     margin: 1px;

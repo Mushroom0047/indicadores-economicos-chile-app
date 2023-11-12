@@ -15,15 +15,15 @@ let { valor, codigo } = data;
     }
 
   return (
-    <div className='w-48 rounded-xl text-center bg-red-400 py-10 px-2 flex flex-col'>
+    <div className='w-52 h-52 rounded-xl text-center flex flex-col shadow-xl justify-center'>
       {load && <div className="w-8 h-8 border-t-2 border-blue-500 border-solid rounded-full animate-spin mx-auto my-4"></div>}
       {error && <h2>Error al obtener datos</h2>}      
       {
         data && (
         <>
-          <h3>{title}</h3>
+          <h3 className='text-teal-300 text-xl pb-8'>{title}</h3>
           <hr />
-          <h4>{formattedNumber}</h4>
+          <h4 className='text-teal-300 text-4xl pt-8'>{formattedNumber}</h4>
           </> 
         )
       }

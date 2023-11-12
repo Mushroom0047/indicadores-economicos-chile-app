@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+h1 {
+    color: #2E3047;
+    font-family: 'Abril Fatface', serif;
+    font-size: 64px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h2 {
+    color: #2E3047;
+    font-family: Abril Fatface;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.g-color {
+    color: #3BBA9C;
+}
+
+p {
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.bg-section{
+    background-color: #3C3F58;
+}

@@ -6,6 +6,7 @@ import {
   TabPanel,
 } from "@material-tailwind/react";
 import { ConverterInput } from "./ConverterInput";
+import circlesBg from '../../assets/Ellipse 2.png';
 
 export const Converter = () => {
   const data = [
@@ -39,13 +40,13 @@ export const Converter = () => {
     },
   ];
   return (
-    <>
-      <div className="container mx-auto">
-          <h2 className="text-center">CONVERTIDOR</h2>
-      </div>
-      <div className="flex flex-row bg-red-200 p-0 m-0 h-96 items-center">
-        <div className="w-2/3 bg-sky-100">
-          <Tabs value="uf" orientation="vertical">
+    <div className="w-full flex justify-center">
+      <div className="w-1/2 bg-teal-300 my-32 pb-8 rounded-r-lg px-12">
+        <div className="text-center w-full pt-14">
+          <h2 className="text-white text-5xl mb-12">CONVERTIDOR</h2>
+        </div>
+        <div className="flex justify-center">
+          <Tabs value="uf" orientation="vertical" className=''>
             <TabsHeader className="w-32">
               {data.map(({ label, value }) => (
                 <Tab key={value} value={value}>
@@ -63,6 +64,13 @@ export const Converter = () => {
           </Tabs>
         </div>
       </div>
-    </>
+      <div className="w-1/2">
+        <img
+          src={circlesBg}
+          alt="bg image decoration"
+          className="absolute right-0"
+        />
+      </div>
+    </div>
   )
 }

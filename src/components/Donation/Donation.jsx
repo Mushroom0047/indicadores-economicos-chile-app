@@ -1,44 +1,61 @@
 import { useState } from 'react';
-import Modal from 'react-modal';
+import {
+  Button,
+  Dialog,
+  DialogHeader,
+  DialogBody,
+  IconButton,
+} from "@material-tailwind/react";
 
 export const Donation = () => {
-    const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
-    const openModal = () => {
-      setModalIsOpen(true);
-    };
-  
-    const closeModal = () => {
-      setModalIsOpen(false);
-    };
-  
-    return (
-      <div>
-        <button onClick={openModal}>Donar</button>
-        <Modal
-          isOpen={modalIsOpen}
-          onRequestClose={closeModal}
-          contentLabel="Donación"
-          style={{
-            overlay: {
-              backgroundColor: 'rgba(0, 0, 0, 0.5)',
-            },
-            content: {
-              width: '518px',
-              height:'680px',
-              margin: 'auto',
-              overflow: 'hidden'
-            },
-          }}
-        >
+  const handleOpen = () => setOpen(!open);
+
+  return (
+    <>
+      <Button onClick={handleOpen} variant='text'>Donar</Button>
+      <Dialog
+        open={open}
+        handler={handleOpen}
+        animate={{
+          mount: { scale: 1, y: 0 },
+          unmount: { scale: 0.9, y: -100 },
+        }}
+      >
+        <DialogHeader>
+        <IconButton
+            color="blue-gray"
+            size="sm"
+            variant="text"
+            onClick={handleOpen}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+              className="h-5 w-5"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </IconButton>
+        </DialogHeader>
+        <DialogBody>
           <iframe
             id="kofiframe"
             src="https://ko-fi.com/mushroom47/?hidefeed=true&widget=true&embed=true&preview=true"
-            style={{ border: 'none', width: '100%', padding: '0px', background: '#f9f9f9' }}
+            style={{ border: 'none', width: '100%', padding: '0px', background: '#f9f9f9', zindex: "999" }}
             height="712"
             title="mushroom47"
-          ></iframe>        
-        </Modal>
-      </div>
-    );
+          ></iframe>
+        </DialogBody>
+      </Dialog>
+    </>
+  );
 }
