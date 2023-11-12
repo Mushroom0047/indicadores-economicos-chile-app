@@ -1,6 +1,6 @@
 import imgChart from '../../assets/chart-img.webp';
 import { ChartData } from './ChartData';
-import halfCircle from '../../assets/Ellipse 3.png';
+import halfCircle from '../../assets/Ellipse 3.svg';
 import {
   Tabs,
   TabsHeader,

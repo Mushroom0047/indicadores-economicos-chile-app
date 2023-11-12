@@ -1,5 +1,6 @@
 .gg-menu {
     transform: scale(var(--ggs,1));
+    color: #fff;
    }
    
    .gg-menu,

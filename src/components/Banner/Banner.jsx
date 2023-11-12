@@ -1,7 +1,7 @@
 import { Button } from "@material-tailwind/react";
 import rocketImage from "../../assets/Rocket-image.webp";
-import bgImageRight from '../../assets/Ellipse 8.png'
-import bgCircle from '../../assets/Ellipse 5.png'
+import bgImageRight from '../../assets/Ellipse 1.svg'
+import bgCircle from '../../assets/Ellipse 2.svg'
 import { Donation } from "../Donation/Donation";
 
 const Banner = () => {
@@ -27,13 +27,15 @@ const Banner = () => {
       </div>
       <div className="w-1/2">
         <img
+          src={bgImageRight}
+          alt="bg image decoration"
+          className="absolute right-0 top-0 -z-10" 
+          width={850}
+        />
+        <img
           src={rocketImage}
           alt="rocket image decoration"
         />
-        <img
-          src={bgImageRight}
-          alt="bg image decoration"
-          className="absolute -top-4 -z-10" />
       </div>
     </div>
   )

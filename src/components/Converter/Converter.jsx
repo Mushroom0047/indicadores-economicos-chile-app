@@ -6,37 +6,40 @@ import {
   TabPanel,
 } from "@material-tailwind/react";
 import { ConverterInput } from "./ConverterInput";
-import circlesBg from '../../assets/Ellipse 2.png';
+import circlesBg from '../../assets/Ellipse 4.svg';
+import { useFetch } from "../../useFetch";
 
 export const Converter = () => {
-  const data = [
+  const {data, loading, error} = useFetch('https://mindicador.cl/api');
+
+  const dataValues = [
     {
       label: "UF",
       value: "uf",
-      desc: <ConverterInput />
+      desc: <ConverterInput data={data?.uf}/>
     },
     {
       label: "DÓLAR",
       value: "dolar",
-      desc: <ConverterInput />
+      desc: <ConverterInput data={data?.dolar}/>
     },
 
     {
       label: "EURO",
       value: "euro",
-      desc: <ConverterInput />
+      desc: <ConverterInput data={data?.euro}/>
     },
 
     {
       label: "IPC",
       value: "ipc",
-      desc: <ConverterInput />
+      desc: <ConverterInput data={data?.ipc}/>
     },
 
     {
       label: "UTM",
       value: "utm",
-      desc: <ConverterInput />
+      desc: <ConverterInput data={data?.utm}/>
     },
   ];
   return (
@@ -48,14 +51,14 @@ export const Converter = () => {
         <div className="flex justify-center">
           <Tabs value="uf" orientation="vertical" className=''>
             <TabsHeader className="w-32">
-              {data.map(({ label, value }) => (
+              {dataValues.map(({ label, value }) => (
                 <Tab key={value} value={value}>
                   {label}
                 </Tab>
               ))}
             </TabsHeader>
             <TabsBody>
-              {data.map(({ value, desc }) => (
+              {dataValues.map(({ value, desc }) => (
                 <TabPanel key={value} value={value} className="py-0">
                   {desc}
                 </TabPanel>

@@ -18,10 +18,13 @@ const Header = () => {
   return (
     <div className='w-full flex mx-auto px-32 mt-5'>
       <div className="w-1/2">
-        <img
-          className="w-12"
-          src={logo}
-        />
+        <a href='#'>
+          <img
+            className="w-12"
+            src={logo}
+            alt='logo menu'
+          />
+        </a>
       </div>
       <div className='w-1/2 flex justify-end'>
         <Button onClick={openDrawerRight} variant="text"><i className='gg-menu'></i></Button>

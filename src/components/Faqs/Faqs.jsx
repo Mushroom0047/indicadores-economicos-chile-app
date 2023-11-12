@@ -1,6 +1,6 @@
 import { FaqsAccordion } from "./FaqsAccordion"
 import RocketGirl from "../../assets/rocket-girl.webp"
-import bigCircle from '../../assets/Ellipse 6.png';
+import bigCircle from '../../assets/Ellipse 5.svg';
 
 export const Faqs = () => {
 
