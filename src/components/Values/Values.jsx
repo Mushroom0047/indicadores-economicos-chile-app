@@ -9,7 +9,7 @@ const Values = () => {
   
   return (
     <div className="mx-auto text-center mb-24 px-28">
-      <h2 className="text-teal-300">VALORES HOY</h2>
+      <h2 className="text-teal-300 text-5xl pb-5">VALORES HOY</h2>
       <p>{date}</p>
       <div className="w-full flex flex-row gap-12 justify-center pt-7">        
       {

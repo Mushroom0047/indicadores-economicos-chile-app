@@ -16,13 +16,13 @@ const Header = () => {
   const closeDrawerRight = () => setOpenRight(false);
 
   return (
-    <div className='w-full flex mx-auto px-32 mt-5'>
+    <section className='w-full flex mx-auto mt-5 md:px-5 lg:px-32 sm:px-5'>
       <div className="w-1/2">
         <a href='#'>
           <img
             className="w-12"
             src={logo}
-            alt='logo menu'
+            alt='logo menu'            
           />
         </a>
       </div>
@@ -74,7 +74,7 @@ const Header = () => {
           </div>
         </Drawer>
       </div>
-    </div>
+    </section>
   )
 }
 
