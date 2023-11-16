@@ -28,8 +28,8 @@ export const ConverterInput = ({data}) => {
 
     return (
         <div className="flex flex-col h-full items-center justify-center gap-5">
-            <div className="w-full flex justify-center gap-5 mt-5 px-8">
-                <div className="w-1/2">
+            <div className="w-full flex flex-col justify-center gap-5 mt-5 px-8">
+                <div className="w-full">
                     <Input                        
                         value={clpValue}
                         label='clp'
@@ -38,7 +38,7 @@ export const ConverterInput = ({data}) => {
                         onChange={handleClpValue}                               
                     />
                 </div>
-                <div className="w-1/2">
+                <div className="w-full">
                     <Input
                         value={currencyValue}
                         label={data?.nombre}
@@ -49,7 +49,7 @@ export const ConverterInput = ({data}) => {
                 </div>
             </div>
             <div className="">
-                <h3 className="text-white text-xl">1 {data?.nombre} = {valueConverted}</h3>
+                <h3 className="text-white text-md text-center">1 {data?.nombre} = {valueConverted}</h3>
             </div>
 
         </div>

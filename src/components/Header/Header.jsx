@@ -27,7 +27,7 @@ const Header = () => {
         </a>
       </div>
       <div className='w-1/2 flex justify-end'>
-        <Button onClick={openDrawerRight} variant="text"><i className='gg-menu'></i></Button>
+        <Button onClick={openDrawerRight} variant="text"  className='hover:bg-teal-300 group'><i className='gg-menu text-teal-300 group-hover:text-white'></i></Button>
         <Drawer
           placement="right"
           open={openRight}
@@ -67,7 +67,7 @@ const Header = () => {
             <ListItem>Preguntas frecuentes</ListItem>
           </List>
           <div className="flex gap-2">
-            <Button size="sm" variant="outlined">
+            <Button size="sm" variant="outlined" className='hover:bg-teal-300 transition-colors hover:text-white'>
               Agregar a Chrome
             </Button>
             <Button size="sm">Donar</Button>

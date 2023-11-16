@@ -9,15 +9,15 @@ export const Faqs = () => {
       <img
         src={bigCircle}
         alt="bg image decoration"
-        className="absolute right-0 -z-10"
+        className="absolute right-0 -z-10 opacity-20"
         width={500}
       />
       <h2 className="text-center text-5xl">PREGUNTAS FRECUENTES</h2>
-      <div className="flex ps-28">
-        <div className="w-1/2 mt-28">
+      <div className="flex flex-wrap">
+        <div className="w-full mt-28 bg-white bg-opacity-80 px-8">
           <FaqsAccordion />
         </div>
-        <div className="w-1/2">
+        <div className="w-full">
           <img
             src={RocketGirl}
             alt="decoration image rocket girl" 

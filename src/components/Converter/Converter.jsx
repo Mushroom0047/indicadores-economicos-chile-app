@@ -37,14 +37,14 @@ export const Converter = () => {
     },
   ];
   return (
-    <div className="w-full flex justify-center">
-      <div className="w-1/2 bg-teal-300 my-32 py-28 rounded-r-lg px-12">
-        <div className="text-center w-full pt-14">
+    <section className="w-full flex flex-wrap justify-center">
+      <div className="w-full order-2 bg-teal-300 my-24 py-16 rounded-r-lg px-0">
+        <div className="text-center w-full">
           <h2 className="text-white text-5xl mb-12">CONVERTIDOR</h2>
         </div>
         <div className="flex justify-center">
           <Tabs value="uf" orientation="vertical" className='w-full'>
-            <TabsHeader className="w-32 ">
+            <TabsHeader className="w-32">
               {dataValues.map(({ label, value }) => (
                 <Tab key={value} value={value}>
                   {label}
@@ -61,13 +61,13 @@ export const Converter = () => {
           </Tabs>
         </div>
       </div>
-      <div className="w-1/2">
+      <div className="w-full order-1 hidden">
         <img
           src={circlesBg}
           alt="bg image decoration"
           className="absolute right-0"
         />
       </div>
-    </div>
+    </section>
   )
 }

@@ -43,23 +43,23 @@ export const Chart = () => {
   ];
 
   return (
-    <div className="flex flex-row">
+    <section className="flex flex-row">
         <img
           src={halfCircle}
           alt='bg image decoration'
-          className='absolute left-0'
+          className='hidden'
           width={300}
         />
-      <div className="w-1/3 z-10">
+      <div className="w-full z-10 hidden">
         <img
           src={imgChart}
           alt="decoration image charts"
           className='relative left-1/2'
         />
       </div>
-      <div className="w-2/3 text-center bg-section rounded-s-xl">
-        <h2 className='text-center text-5xl py-2 text-white'>GRÁFICOS</h2>
-        <Tabs id="custom-animation" value="uf" className='px-28'>
+      <div className="w-full text-center bg-section rounded-xl py-16">
+        <h2 className='text-center text-5xl py-5 text-white'>GRÁFICOS</h2>
+        <Tabs id="custom-animation" value="uf" className='px-2 w-full '>
           <TabsHeader>
             {data.map(({ label, value }) => (
               <Tab key={value} value={value}>
@@ -83,9 +83,9 @@ export const Chart = () => {
           </TabsBody>
         </Tabs>
         <div className='mx- auto py-12'>
-          <Button className='bg-teal-400'>AGREGAR A CHROME</Button>
+          <Button className='bg-teal-400 hover:bg-teal-600'>AGREGAR A CHROME</Button>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
