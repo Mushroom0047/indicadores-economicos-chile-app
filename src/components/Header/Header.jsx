@@ -16,7 +16,7 @@ const Header = () => {
   const closeDrawerRight = () => setOpenRight(false);
 
   return (
-    <section className='w-full flex mx-auto mt-5 md:px-5 lg:px-32 sm:px-5'>
+    <section className='w-full flex mx-auto mt-5 md:px-5'>
       <div className="w-1/2">
         <a href='#'>
           <img
@@ -27,7 +27,7 @@ const Header = () => {
         </a>
       </div>
       <div className='w-1/2 flex justify-end'>
-        <Button onClick={openDrawerRight} variant="text"  className='hover:bg-teal-300 group'><i className='gg-menu text-teal-300 group-hover:text-white'></i></Button>
+        <Button onClick={openDrawerRight} variant="text"  className='hover:bg-teal-300 group'><i className='gg-menu text-teal-300 group-hover:text-white md:text-white'></i></Button>
         <Drawer
           placement="right"
           open={openRight}

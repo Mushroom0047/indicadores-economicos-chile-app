@@ -47,17 +47,16 @@ export const Chart = () => {
         <img
           src={halfCircle}
           alt='bg image decoration'
-          className='hidden'
-          width={300}
+          className='hidden md:block md:w-300'        
         />
-      <div className="w-full z-10 hidden">
+      <div className="w-full z-10 hidden md:block md:w-1/4">
         <img
           src={imgChart}
           alt="decoration image charts"
-          className='relative left-1/2'
+          className='absolute left-1/2 md:-left-20'
         />
       </div>
-      <div className="w-full text-center bg-section rounded-xl py-16">
+      <div className="w-full text-center bg-section rounded-xl py-16 md:w-3/4 md:px-4">
         <h2 className='text-center text-5xl py-5 text-white'>GRÁFICOS</h2>
         <Tabs id="custom-animation" value="uf" className='px-2 w-full '>
           <TabsHeader>

@@ -19,7 +19,7 @@ const Values = () => {
               <CurrencyValue load={loading} title='DÓLAR' data={data.dolar} error={error} />
               <CurrencyValue load={loading} title='EURO' data={data.euro} error={error} />
               <CurrencyValue load={loading} title='IPC' data={data.ipc} error={error} />
-              <CurrencyValue load={loading} title='UTM' data={data.utm} error={error} />
+              <CurrencyValue load={loading} title='UTM' data={data.utm} error={error} />            
             </>
           )
         }

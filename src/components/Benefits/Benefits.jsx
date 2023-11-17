@@ -9,7 +9,7 @@ const Benefits = () => {
     const altCaptures = 'capturas extension indicadores economicos chile 600x600';
     return (
         <section className="container flex flex-wrap mx-auto mb-24">
-            <div className="w-full order-2">
+            <div className="w-full order-2 md:w-1/2 md:order-1">
                 <Carousel className="rounded-xl" loop>
                     <img
                         src={cap01}
@@ -28,7 +28,7 @@ const Benefits = () => {
                     />
                 </Carousel>
             </div>
-            <div className="w-full px-16 flex flex-col justify-around items-center gap-16 mb-16 order-1">
+            <div className="w-full px-16 flex flex-col justify-around items-center gap-16 mb-16 order-1 md:w-1/2 md:order-2">
                 <h2 className="text-center text-3xl">BENEFICIOS DE LA EXTENSIÓN</h2>
                 <div className="flex flex-row justify-between w-full items-center">
                     <div className="w-1/4">
