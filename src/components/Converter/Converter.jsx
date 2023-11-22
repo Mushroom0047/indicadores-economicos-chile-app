@@ -38,7 +38,7 @@ export const Converter = () => {
   ];
   return (
     <section className="w-full flex flex-wrap justify-center">
-      <div className="w-full order-2 bg-teal-300 my-24 py-16 rounded-r-lg px-0 md:w-2/3 md:order-1">
+      <div className="w-full order-2 bg-teal-300 my-24 py-16 rounded-r-lg px-0 md:w-2/3 md:order-1 lg:px-60">
         <div className="text-center w-full">
           <h2 className="text-white text-5xl mb-12">CONVERTIDOR</h2>
         </div>

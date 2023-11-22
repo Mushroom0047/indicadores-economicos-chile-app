@@ -6,7 +6,7 @@ import { Donation } from "../Donation/Donation";
 
 const Banner = () => {
   return (
-    <section className="container flex flex-wrap mx-auto mb-52">
+    <section className="container flex flex-wrap mx-auto mb-52 lg:mb-24">
       <div className="px-3 order-2 mt-14 w-full sm:w-1/2 sm:order-1">
         <h1 className="text-5xl">Indicadores <br/><span className="g-color">Económicos</span> <br /> <span className="g-color">Chile</span></h1>
         <p className="my-5 text-left rounded bg-white p-2">¿Quieres estar siempre al tanto de los últimos valores económicos
