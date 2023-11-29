@@ -61,11 +61,11 @@ const Header = () => {
             </IconButton>
           </div>
           <List>
-            <a href='#banner'><ListItem>Inicio</ListItem></a>
-            <a href="#valores"><ListItem>Valores</ListItem></a>
-            <a href="#graficos"><ListItem>Gráficos</ListItem></a>
-            <a href="#convertidor"><ListItem>Convertidor</ListItem></a>
-            <a href="#faqs"><ListItem>Preguntas frecuentes</ListItem></a>
+            <a href='/#banner'><ListItem>Inicio</ListItem></a>
+            <a href="/#valores"><ListItem>Valores</ListItem></a>
+            <a href="/#graficos"><ListItem>Gráficos</ListItem></a>
+            <a href="/#convertidor"><ListItem>Convertidor</ListItem></a>
+            <a href="/#faqs"><ListItem>Preguntas frecuentes</ListItem></a>
           </List>
           <div className="flex gap-2">
             <Button size="sm" variant="outlined" className='hover:bg-teal-300 transition-colors hover:text-white'>

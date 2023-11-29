@@ -20,7 +20,7 @@ const router = createBrowserRouter([
         element: <NoPage />
     },
     {
-        path: '/privacy-policy-indicadores-economicos-chile',
+        path: '/privacy-policy',
         element: <PrivacyPolicy />
     }
 ]);
