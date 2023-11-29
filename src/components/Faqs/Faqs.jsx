@@ -22,6 +22,7 @@ import bigCircle from '../../assets/Ellipse 5.svg';
             src={RocketGirl}
             alt="decoration image rocket girl"
             className="md:absolute md:-right-64 lg:right-0"
+            id="rocket-girl"
             />
         </div>
       </div>

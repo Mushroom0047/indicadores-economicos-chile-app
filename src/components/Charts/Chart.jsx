@@ -54,6 +54,7 @@ const Chart = () => {
           src={imgChart}
           alt="decoration image charts"
           className='absolute left-1/2 md:-left-20 lg:left-40'
+          id="chart-character"
         />
       </div>    
       <div className="w-full text-center bg-section rounded-xl py-16 md:w-3/4 md:px-4 lg:w-3/4 lg:px-20 lg:rounded-none lg:py-4">

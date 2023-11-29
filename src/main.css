@@ -37,3 +37,37 @@ p {
 .bg-section{
     background-color: #3C3F58;
 }
+/*!--------------animations-------------------*/
+#rocket{
+    animation: rocketAnimation 2s infinite alternate ease-in-out;
+}
+#chart-character{
+    animation: characterAnimation 2s infinite alternate ease-in-out;
+}
+#rocket-girl{
+    animation: rocketGirlAnimation 1s infinite alternate ease-in-out;
+}
+@keyframes rocketAnimation {
+    from{
+        transform: translate(0,0);
+    }
+    to{
+        transform: translate(-20px,-20px);
+    }
+}
+@keyframes characterAnimation {
+    from{
+        transform: translate(0,0);
+    }
+    to{
+        transform: translate(-20px, 30px);
+    }
+}
+@keyframes rocketGirlAnimation {
+    from{
+        transform: translate(0,0);
+    }
+    to{
+        transform: translate(-30px, 10px);
+    }
+}
