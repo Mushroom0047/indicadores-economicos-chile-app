@@ -45,7 +45,7 @@ export const ChartData = ({ url }) => {
 
   return (
     loading ? (
-      <Spinner color="indigo" />
+      <Spinner color="teal" className='mx-auto' />
     ) : (
       <Line data={chartData} />
     )

@@ -2,10 +2,10 @@ import { FaqsAccordion } from "./FaqsAccordion"
 import RocketGirl from "../../assets/rocket-girl.webp"
 import bigCircle from '../../assets/Ellipse 5.svg';
 
-export const Faqs = () => {
+ const Faqs = () => {
 
   return (
-    <section className="w-full mx-auto text-center mb-40 lg:px-32 lg:mb-80">
+    <section className="w-full mx-auto text-center mb-40 lg:px-32 lg:mb-80" id="faqs">
       <img
         src={bigCircle}
         alt="bg image decoration"
@@ -21,10 +21,11 @@ export const Faqs = () => {
           <img
             src={RocketGirl}
             alt="decoration image rocket girl"
-            className="md:absolute md:-right-44 lg:right-0"
+            className="md:absolute md:-right-64 lg:right-0"
             />
         </div>
       </div>
     </section>
   )
 }
+export default Faqs;

@@ -9,7 +9,7 @@ import { ConverterInput } from "./ConverterInput";
 import circlesBg from '../../assets/Ellipse 4.svg';
 import { useFetch } from "../../useFetch";
 
-export const Converter = () => {
+ const Converter = () => {
   const {data, loading, error} = useFetch('https://mindicador.cl/api');
 
   const dataValues = [
@@ -37,8 +37,8 @@ export const Converter = () => {
     },
   ];
   return (
-    <section className="w-full flex flex-wrap justify-center">
-      <div className="w-full order-2 bg-teal-300 my-24 py-16 rounded-r-lg px-0 md:w-2/3 md:order-1 lg:px-60">
+    <section className="w-full flex flex-wrap justify-center" id="convertidor">
+      <div className="w-full order-2 bg-teal-300 my-24 py-16 rounded-r-lg px-0 md:w-2/3 md:order-1 lg:px-28">
         <div className="text-center w-full">
           <h2 className="text-white text-5xl mb-12">CONVERTIDOR</h2>
         </div>
@@ -71,3 +71,5 @@ export const Converter = () => {
     </section>
   )
 }
+
+export default Converter;

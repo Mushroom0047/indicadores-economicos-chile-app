@@ -16,9 +16,9 @@ const Header = () => {
   const closeDrawerRight = () => setOpenRight(false);
 
   return (
-    <section className='w-full flex mx-auto mt-5 md:px-5'>
+    <header className='w-full flex mx-auto mt-5 md:px-5'>
       <div className="w-1/2">
-        <a href='#'>
+        <a href='/'>
           <img
             className="w-12"
             src={logo}
@@ -27,12 +27,13 @@ const Header = () => {
         </a>
       </div>
       <div className='w-1/2 flex justify-end'>
-        <Button onClick={openDrawerRight} variant="text"  className='hover:bg-teal-300 group'><i className='gg-menu text-teal-300 group-hover:text-white md:text-white'></i></Button>
+        <Button onClick={openDrawerRight} variant="text"  className='hover:bg-teal-300 group'><i className='gg-menu text-teal-300 group-hover:text-white'></i></Button>
         <Drawer
           placement="right"
           open={openRight}
           onClose={closeDrawerRight}
           className="p-4"
+          overlay={false}
         >
           <div className="mb-6 flex items-center justify-between">
             <Typography variant="h5" color="blue-gray">
@@ -60,21 +61,24 @@ const Header = () => {
             </IconButton>
           </div>
           <List>
-            <ListItem>Inicio</ListItem>
-            <ListItem>Valores</ListItem>
-            <ListItem>Gráficos</ListItem>
-            <ListItem>Convertidor</ListItem>
-            <ListItem>Preguntas frecuentes</ListItem>
+            <a href='#banner'><ListItem>Inicio</ListItem></a>
+            <a href="#valores"><ListItem>Valores</ListItem></a>
+            <a href="#graficos"><ListItem>Gráficos</ListItem></a>
+            <a href="#convertidor"><ListItem>Convertidor</ListItem></a>
+            <a href="#faqs"><ListItem>Preguntas frecuentes</ListItem></a>
           </List>
           <div className="flex gap-2">
             <Button size="sm" variant="outlined" className='hover:bg-teal-300 transition-colors hover:text-white'>
-              Agregar a Chrome
+            <a
+                href="https://chromewebstore.google.com/detail/indicadores-econ%C3%B3micos-ch/ammnbjfbmidllmfjicddmdilkioodpld"
+                target="blank"
+              >AGREGAR A CHROME</a>
             </Button>
             <Button size="sm">Donar</Button>
           </div>
         </Drawer>
       </div>
-    </section>
+    </header>
   )
 }
 

@@ -4,12 +4,13 @@ import { Carousel } from "@material-tailwind/react";
 import cap01 from '../../assets/capturas extension/capturas extension indicadores economicos chile 600x600.webp';
 import cap02 from '../../assets/capturas extension/capturas extension indicadores economicos chile 600x600 (2).webp';
 import cap03 from '../../assets/capturas extension/capturas extension indicadores economicos chile 600x600 (3).webp';
+import { Fade } from 'react-awesome-reveal';
 
 const Benefits = () => {
     const altCaptures = 'capturas extension indicadores economicos chile 600x600';
     return (
-        <section className="container flex flex-wrap mx-auto mb-24">
-            <div className="w-full order-2 md:w-1/2 md:order-1">
+        <section className="container flex flex-wrap mx-auto mb-24" id='beneficios'>
+            <Fade className="w-full px-8 order-2 md:w-1/2 md:order-1 md:px-2">
                 <Carousel className="rounded-xl" loop>
                     <img
                         src={cap01}
@@ -27,10 +28,13 @@ const Benefits = () => {
                         className="h-full w-full object-cover"
                     />
                 </Carousel>
-            </div>
+            </Fade>
             <div className="w-full px-16 flex flex-col justify-around items-center gap-16 mb-16 order-1 md:w-1/2 md:order-2">
-                <h2 className="text-center text-3xl lg:text-5xl">BENEFICIOS DE LA EXTENSIÓN</h2>
-                <div className="flex flex-row justify-between w-full items-center">
+                <Fade direction="up">
+                    <h2 className="text-center text-3xl lg:text-5xl">BENEFICIOS DE LA EXTENSIÓN</h2>
+                </Fade>
+                <Fade cascade>
+                   <div className="flex flex-row justify-between w-full items-center">
                     <div className="w-1/4">
                         <i className="gg-time"></i>
                     </div>
@@ -53,7 +57,9 @@ const Benefits = () => {
                     <div className="w-3/4">
                         <p className='text-2xl'>Conversor integrado</p>
                     </div>
-                </div>
+                </div> 
+                </Fade>
+                
             </div>
         </section>
     )

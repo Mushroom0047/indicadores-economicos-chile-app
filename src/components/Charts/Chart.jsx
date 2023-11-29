@@ -10,7 +10,7 @@ import {
   Button,
 } from "@material-tailwind/react";
 
-export const Chart = () => {
+const Chart = () => {
   const data = [
     {
       label: "UF",
@@ -43,19 +43,19 @@ export const Chart = () => {
   ];
 
   return (
-    <section className="flex flex-row">
+    <section className="flex flex-row" id="graficos">
         <img
           src={halfCircle}
           alt='bg image decoration'
           className='hidden md:block md:w-300 lg:relative lg:w-1/4'        
-        />
-      <div className="w-full z-10 hidden md:block md:w-1/4 lg:w-1/4">
+          />          
+      <div className="w-full z-10 hidden md:block md:w-1/4 lg:w-1/4">      
         <img
           src={imgChart}
           alt="decoration image charts"
           className='absolute left-1/2 md:-left-20 lg:left-40'
         />
-      </div>
+      </div>    
       <div className="w-full text-center bg-section rounded-xl py-16 md:w-3/4 md:px-4 lg:w-3/4 lg:px-20 lg:rounded-none lg:py-4">
         <h2 className='text-center text-5xl py-5 text-white'>GRÁFICOS</h2>
         <Tabs id="custom-animation" value="uf" className='px-2 w-full '>
@@ -82,9 +82,16 @@ export const Chart = () => {
           </TabsBody>
         </Tabs>
         <div className='mx- auto py-12'>
-          <Button className='bg-teal-400 hover:bg-teal-600'>AGREGAR A CHROME</Button>
+          <Button className='bg-teal-400 hover:bg-teal-600'>
+            <a
+            href='https://chromewebstore.google.com/detail/indicadores-econ%C3%B3micos-ch/ammnbjfbmidllmfjicddmdilkioodpld'
+            target='blank'
+            >AGREGAR A CHROME</a>
+          </Button>
         </div>
       </div>
     </section>
   )
 }
+
+export default Chart;

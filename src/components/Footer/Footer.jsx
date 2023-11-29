@@ -1,8 +1,8 @@
 import logoHV from "../../assets/logo-hector-valdes.webp";
 
-export const Footer = () => {
+ const Footer = () => {
     return (
-        <div className="text-center flex-col justify-center">
+        <footer className="text-center flex-col justify-center ">
             <div className="w-full">
                 <div className="mx-auto w-80 h-40 bg-teal-300 flex justify-center items-center pt-6 rounded-t-full">
                     <a href="#">
@@ -15,7 +15,10 @@ export const Footer = () => {
                 </div>
             </div>
             <div className="w-full flex justify-center gap-5 bg-teal-300 z-10 py-4">
-                <a href="#">
+                <a 
+                href="https://github.com/Mushroom0047"
+                target="blank"
+                >
                     <img 
                     width="40" 
                     height="40" 
@@ -24,7 +27,10 @@ export const Footer = () => {
                     className="hover:-translate-y-1 transition-transform"
                     />
                 </a>
-                <a href="#">
+                <a 
+                href="https://www.linkedin.com/in/hector-valdes-m/"
+                target="blank"
+                >
                     <img 
                     width="40" 
                     height="40" 
@@ -33,7 +39,10 @@ export const Footer = () => {
                     className="hover:-translate-y-1 transition-transform"
                     />
                 </a>
-                <a href="#">
+                <a 
+                href="https://hectorvaldesm.com/"
+                target="blank"
+                >
                     <img 
                     width="40" 
                     height="40" 
@@ -50,6 +59,7 @@ export const Footer = () => {
                     <a href="https://dribbble.com/alzea" target="blank" className="text-white hover:text-teal-300 transition-colors"> Alzea</a>
                 </h3>
             </div>
-        </div>
+        </footer>
     )
 }
+export default Footer;
