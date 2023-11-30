@@ -9,6 +9,7 @@ import {
   List,
   ListItem,
 } from "@material-tailwind/react";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [openRight, setOpenRight] = useState(false);
@@ -22,12 +23,12 @@ const Header = () => {
           <img
             className="w-12"
             src={logo}
-            alt='logo menu'            
+            alt='logo menu'
           />
         </a>
       </div>
       <div className='w-1/2 flex justify-end'>
-        <Button onClick={openDrawerRight} variant="text"  className='hover:bg-teal-300 group'><i className='gg-menu text-teal-300 group-hover:text-white'></i></Button>
+        <Button onClick={openDrawerRight} variant="text" className='hover:bg-teal-300 group'><i className='gg-menu text-teal-300 group-hover:text-white'></i></Button>
         <Drawer
           placement="right"
           open={openRight}
@@ -61,15 +62,15 @@ const Header = () => {
             </IconButton>
           </div>
           <List>
-            <a href='/#banner'><ListItem>Inicio</ListItem></a>
-            <a href="/#valores"><ListItem>Valores</ListItem></a>
-            <a href="/#graficos"><ListItem>Gráficos</ListItem></a>
-            <a href="/#convertidor"><ListItem>Convertidor</ListItem></a>
-            <a href="/#faqs"><ListItem>Preguntas frecuentes</ListItem></a>
+            <a href="#banner"><ListItem>Inicio</ListItem></a>
+            <a href="#valores"><ListItem>Valores</ListItem></a>
+            <a href="#graficos"><ListItem>Gráficos</ListItem></a>
+            <a href="#convertidor"><ListItem>Convertidor</ListItem></a>
+            <a href="#faqs"><ListItem>Preguntas frecuentes</ListItem></a>
           </List>
           <div className="flex gap-2">
             <Button size="sm" variant="outlined" className='hover:bg-teal-300 transition-colors hover:text-white'>
-            <a
+              <a
                 href="https://chromewebstore.google.com/detail/indicadores-econ%C3%B3micos-ch/ammnbjfbmidllmfjicddmdilkioodpld"
                 target="blank"
               >AGREGAR A CHROME</a>

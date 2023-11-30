@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logoHV from "../../assets/logo-hector-valdes.webp";
 
  const Footer = () => {
@@ -55,7 +56,7 @@ import logoHV from "../../assets/logo-hector-valdes.webp";
             <div className="w-full bg-section py-4">
                 <h3 className="text-white text-sm">
                     <a href="https://hectorvaldesm.com/" target="blank" className="text-white hover:text-teal-300 transition-colors">Diseño y Desarrollo </a>
-                    por Mushroom 🍄|<a href="/privacy-policy" className="text-white hover:text-teal-300 transition-colors"> Política de privacidad</a> |  Ilustraciones por
+                    por Mushroom 🍄|<Link to="/privacy-policy" className="text-white hover:text-teal-300 transition-colors"> Política de privacidad</Link> |  Ilustraciones por
                     <a href="https://dribbble.com/alzea" target="blank" className="text-white hover:text-teal-300 transition-colors"> Alzea</a>
                 </h3>
             </div>

@@ -2,14 +2,14 @@
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import './main.css'
-import { RouterProvider, createHashRouter } from 'react-router-dom'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from './Pages/Home.jsx'
 import NoPage from './Pages/NoPage.jsx'
 import PrivacyPolicy from './Pages/PrivacyPolicy.jsx'
 import ErrorPage from './Pages/ErrorPage.jsx'
 import React from 'react'
 
-const router = createHashRouter([
+const router = createBrowserRouter([
     {
         path: '/',
         element: <Home />,
