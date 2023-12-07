@@ -25,3 +25,6 @@
    .gg-menu::after {
     top: 8px
    } 
+   .z-custsom{
+    z-index: 9999 !important;
+   }

@@ -17,7 +17,7 @@ const Header = () => {
   const closeDrawerRight = () => setOpenRight(false);
 
   return (
-    <header className='w-full flex mx-auto mt-5 md:px-5'>
+    <header className=' w-full flex mx-auto mt-5 md:px-5 '>
       <div className="w-1/2">
         <a href='/'>
           <img
@@ -28,7 +28,7 @@ const Header = () => {
         </a>
       </div>
       <div className='w-1/2 flex justify-end'>
-        <Button onClick={openDrawerRight} variant="text" className='hover:bg-teal-300 group'><i className='gg-menu text-teal-300 group-hover:text-white'></i></Button>
+        <Button onClick={openDrawerRight} variant="text" className='bg-teal-300 hover:bg-teal-600 group'><i className='gg-menu text-teal-300 group-hover:text-white'></i></Button>
         <Drawer
           placement="right"
           open={openRight}
@@ -62,11 +62,11 @@ const Header = () => {
             </IconButton>
           </div>
           <List>
-            <a href="/#/#banner"><ListItem>Inicio</ListItem></a>
-            <a href="/#/#valores"><ListItem>Valores</ListItem></a>
-            <a href="/#/#graficos"><ListItem>Gráficos</ListItem></a>
-            <a href="/#/#convertidor"><ListItem>Convertidor</ListItem></a>
-            <a href="/#/#faqs"><ListItem>Preguntas frecuentes</ListItem></a>
+            <a href="#banner"><ListItem>Inicio</ListItem></a>
+            <a href="#valores"><ListItem>Valores</ListItem></a>
+            <a href="#graficos"><ListItem>Gráficos</ListItem></a>
+            <a href="#convertidor"><ListItem>Convertidor</ListItem></a>
+            <a href="#faqs"><ListItem>Preguntas frecuentes</ListItem></a>
           </List>
           <div className="flex gap-2">
             <Button size="sm" variant="outlined" className='hover:bg-teal-300 transition-colors hover:text-white'>

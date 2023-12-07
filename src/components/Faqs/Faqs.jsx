@@ -5,7 +5,7 @@ import bigCircle from '../../assets/Ellipse 5.svg';
  const Faqs = () => {
 
   return (
-    <section className="w-full mx-auto text-center mb-40 lg:px-32 lg:mb-80" id="faqs">
+    <section className="w-full mx-auto text-center mb-20 lg:px-32 lg:mb-80" id="faqs">
       <img
         src={bigCircle}
         alt="bg image decoration"

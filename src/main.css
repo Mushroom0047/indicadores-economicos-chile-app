@@ -45,7 +45,7 @@ p {
     animation: characterAnimation 2s infinite alternate ease-in-out;
 }
 #rocket-girl{
-    animation: rocketGirlAnimation 1s infinite alternate ease-in-out;
+    animation: rocketGirlAnimation 2s infinite alternate ease-in-out;
 }
 @keyframes rocketAnimation {
     from{
