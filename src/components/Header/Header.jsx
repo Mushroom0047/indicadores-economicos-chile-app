@@ -9,7 +9,7 @@ import {
   List,
   ListItem,
 } from "@material-tailwind/react";
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 const Header = () => {
   const [openRight, setOpenRight] = useState(false);
@@ -62,11 +62,11 @@ const Header = () => {
             </IconButton>
           </div>
           <List>
-            <a href="#banner"><ListItem>Inicio</ListItem></a>
-            <a href="#valores"><ListItem>Valores</ListItem></a>
-            <a href="#graficos"><ListItem>Gráficos</ListItem></a>
-            <a href="#convertidor"><ListItem>Convertidor</ListItem></a>
-            <a href="#faqs"><ListItem>Preguntas frecuentes</ListItem></a>
+            <HashLink to="/#banner" onClick={closeDrawerRight}><ListItem>Inicio</ListItem></HashLink>
+            <HashLink to="/#valores" onClick={closeDrawerRight}><ListItem>Valores</ListItem></HashLink>
+            <HashLink to="/#graficos" onClick={closeDrawerRight}><ListItem>Gráficos</ListItem></HashLink>
+            <HashLink to="/#convertidor" onClick={closeDrawerRight}><ListItem>Convertidor</ListItem></HashLink>
+            <HashLink to="/#faqs" onClick={closeDrawerRight}><ListItem>Preguntas frecuentes</ListItem></HashLink>
           </List>
           <div className="flex gap-2">
             <Button size="sm" variant="outlined" className='hover:bg-teal-300 transition-colors hover:text-white'>
