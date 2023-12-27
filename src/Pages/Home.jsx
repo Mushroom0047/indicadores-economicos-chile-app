@@ -4,13 +4,11 @@ import Chart  from "../components/Charts/Chart"
 import Converter  from "../components/Converter/Converter"
 import Faqs  from "../components/Faqs/Faqs"
 import Footer  from "../components/Footer/Footer"
-import Header from "../components/Header/Header"
 import Values from "../components/Values/Values"
 
  const Home = () => {
   return (
     <>
-    <Header />
       <Banner />
       <Benefits />
       <Values />
