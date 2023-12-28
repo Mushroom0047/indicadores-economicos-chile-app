@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@100;300;700&display=swap');
 
 body{
     overflow-x: hidden !important;
@@ -12,6 +12,10 @@ h1 {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+.roboto{
+    font-family: 'Roboto', serif;
+    font-weight: bold;
 }
 
 h2 {
@@ -29,13 +33,10 @@ h2 {
 p {
     color: #000;
     font-family: 'Roboto';
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: normal;
-}
-.bg-section{
-    background-color: #3C3F58;
 }
 /*!--------------animations-------------------*/
 #rocket{

@@ -48,6 +48,7 @@ export const ChartData = ({ url }) => {
       <Spinner color="teal" className='mx-auto' />
     ) : (
       <Line data={chartData} />
+
     )
   );
 };

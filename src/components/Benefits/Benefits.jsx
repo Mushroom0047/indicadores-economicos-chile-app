@@ -4,12 +4,45 @@ import { Carousel } from "@material-tailwind/react";
 import cap01 from '../../assets/capturas extension/capturas extension indicadores economicos chile 600x600.webp';
 import cap02 from '../../assets/capturas extension/capturas extension indicadores economicos chile 600x600 (2).webp';
 import cap03 from '../../assets/capturas extension/capturas extension indicadores economicos chile 600x600 (3).webp';
+import icon01 from '../../assets/icons/cloud-download.webp';
+import icon02 from '../../assets/icons/responsive.webp';
+import icon03 from '../../assets/icons/recurring-cash.webp';
+
 import { Fade } from 'react-awesome-reveal';
 
 const Benefits = () => {
     const altCaptures = 'capturas extension indicadores economicos chile 600x600';
     return (
         <section className="container flex flex-wrap mx-auto mb-24" id='beneficios'>
+            <div className="w-full px-16 flex flex-col justify-around items-center gap-16 mb-16 order-1 md:w-1/2 md:order-2 lg:w-2/3">
+                <Fade cascade className='w-full'>
+                    <div className="flex flex-col items-center gap-8 w-full">                        
+                        <img 
+                            className='w-24'
+                            alt='Icono animado beneficio indicadores económicos'
+                            src={icon01}
+                        />
+                        <p className='text-2xl'>Rápida entrega de resultados</p>
+                    </div>
+                    <div className="flex flex-col items-center gap-8 w-full">                        
+                        <img 
+                            className='w-24'
+                            alt='Icono animado beneficio indicadores económicos'
+                            src={icon02}
+                        />
+                        <p className='text-2xl'>Interfaz fácil de usar</p>
+                    </div>
+                    <div className="flex flex-col items-center gap-8 w-full">                        
+                        <img 
+                            className='w-24'
+                            alt='Icono animado beneficio indicadores económicos'
+                            src={icon03}
+                        />
+                        <p className='text-2xl'>Conversor integrado</p>
+                    </div>
+                </Fade>
+
+            </div>
             <Fade className="w-full px-8 order-2 md:w-1/2 md:order-1 md:px-2 lg:w-1/3">
                 <Carousel className="rounded-xl" loop>
                     <img
@@ -29,38 +62,6 @@ const Benefits = () => {
                     />
                 </Carousel>
             </Fade>
-            <div className="w-full px-16 flex flex-col justify-around items-center gap-16 mb-16 order-1 md:w-1/2 md:order-2 lg:w-2/3">
-                <Fade direction="up">
-                    <h2 className="text-left text-3xl lg:text-5xl">BENEFICIOS DE LA EXTENSIÓN</h2>
-                </Fade>
-                <Fade cascade className='w-full'>
-                    <div className="flex flex-row w-full items-center">
-                        <div className="w-1/4 flex items-center">
-                            <i className="gg-time"></i>
-                        </div>
-                        <div className="w-3/4">
-                            <p className='text-2xl'>Rápida entrega de resultados</p>
-                        </div>
-                    </div>
-                    <div className="flex flex-row w-full items-center">
-                        <div className="w-1/4 flex items-center">
-                            <i className="gg-browser"></i>
-                        </div>
-                        <div className="w-3/4">
-                            <p className='text-2xl'>Interfaz fácil de usar</p>
-                        </div>
-                    </div>
-                    <div className="flex flex-row justify-around items-center w-full">
-                        <div className="w-1/4 flex items-center">
-                            <i className="gg-sync"></i>
-                        </div>
-                        <div className="w-3/4">
-                            <p className='text-2xl'>Conversor integrado</p>
-                        </div>
-                    </div>
-                </Fade>
-
-            </div>
         </section>
     )
 }

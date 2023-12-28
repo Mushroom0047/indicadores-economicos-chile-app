@@ -27,11 +27,8 @@ export const ConverterInput = ({ data }) => {
     }
 
     return (
-        <div className="flex flex-col h-full items-center justify-center gap-5">
-            <div className="text-center w-full">
-                    <h2 className="text-white text-5xl">CONVERTIDOR</h2>
-                </div>
-            <div className="w-full flex flex-col justify-center gap-5 mt-5 px-8 lg:flex-row">                
+        <section className="flex flex-col items-center justify-center gap-5">            
+            <div className="w-full flex flex-col justify-center gap-5 mt-5 px-8 lg:flex-row">
                 <div className="w-full lg:w-1/2">
                     <Input
                         value={clpValue}
@@ -54,8 +51,7 @@ export const ConverterInput = ({ data }) => {
             <div className="">
                 <h3 className="text-white text-md text-center">1 {data?.nombre} = {valueConverted}</h3>
             </div>
-
-        </div>
+        </section>
 
     )
 }
