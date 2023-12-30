@@ -1,4 +1,3 @@
-import './benefits.css';
 import { Carousel } from "@material-tailwind/react";
 
 import cap01 from '../../assets/capturas extension/capturas extension indicadores economicos chile 600x600.webp';
@@ -13,8 +12,8 @@ import { Fade } from 'react-awesome-reveal';
 const Benefits = () => {
     const altCaptures = 'capturas extension indicadores economicos chile 600x600';
     return (
-        <section className="container flex flex-wrap mx-auto mb-24" id='beneficios'>
-            <div className="w-full px-16 flex flex-col justify-around items-center gap-16 mb-16 order-1 md:w-1/2 md:order-2 lg:w-2/3">
+        <section className="flex flex-wrap mx-auto mb-24 md:px-9 md:pt-16 lg:container" id='beneficios'>
+            <div className="w-full px-16 flex flex-col justify-around items-center gap-16 mb-16 order-1 md:w-1/3 md:order-2 lg:w-1/2">
                 <Fade cascade className='w-full'>
                     <div className="flex flex-col items-center gap-8 w-full">                        
                         <img 
@@ -22,7 +21,7 @@ const Benefits = () => {
                             alt='Icono animado beneficio indicadores económicos'
                             src={icon01}
                         />
-                        <p className='text-2xl'>Rápida entrega de resultados</p>
+                        <p className='text-2xl text-center'>Rápida entrega de resultados</p>
                     </div>
                     <div className="flex flex-col items-center gap-8 w-full">                        
                         <img 
@@ -30,7 +29,7 @@ const Benefits = () => {
                             alt='Icono animado beneficio indicadores económicos'
                             src={icon02}
                         />
-                        <p className='text-2xl'>Interfaz fácil de usar</p>
+                        <p className='text-2xl text-center'>Interfaz fácil de usar</p>
                     </div>
                     <div className="flex flex-col items-center gap-8 w-full">                        
                         <img 
@@ -38,12 +37,12 @@ const Benefits = () => {
                             alt='Icono animado beneficio indicadores económicos'
                             src={icon03}
                         />
-                        <p className='text-2xl'>Conversor integrado</p>
+                        <p className='text-2xl text-center'>Conversor integrado</p>
                     </div>
                 </Fade>
 
             </div>
-            <Fade className="w-full px-8 order-2 md:w-1/2 md:order-1 md:px-2 lg:w-1/3">
+            <Fade className="w-full px-8 order-2 md:w-2/3 md:order-1 md:px-2 lg:w-1/2">
                 <Carousel className="rounded-xl" loop>
                     <img
                         src={cap01}

@@ -18,11 +18,11 @@ export const ChartData = ({ url }) => {
   useEffect(() => {
     if (data && data.serie) {
       // Get the formatted dates
-      const getDates = data.serie.map((el) => moment(el.fecha).format('DD-MM-YY')).reverse();
+      const getDates = data.serie.map((el) => moment(el.fecha).format('DD-MM-YY')).slice(0, 7).reverse();
       setDates(getDates);
 
       // Get the values
-      const getValues = data.serie.map((e) => e.valor).reverse();
+      const getValues = data.serie.map((e) => e.valor).slice(0,7).reverse();
       setValues(getValues);
 
       // Get the name

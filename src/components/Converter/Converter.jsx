@@ -37,12 +37,12 @@ const Converter = () => {
   ];
   return (
     <div className="w-full flex flex-wrap justify-center" id="convertidor">
-      <div className="w-full bg-teal-300 py-16 px-0 md:w-2/3 lg:px-28">
+      <div className="w-full bg-teal-300 py-16 px-0 md:px-28">
         <div className="text-center w-full py-8">
           <h2 className="text-white text-5xl">CONVERTIDOR</h2>
         </div>
         <div className="flex justify-center">
-          <Tabs value="uf" orientation="vertical" className='w-full md:hidden'>
+          <Tabs value="uf" orientation="vertical" className='w-full lg:w-1/2'>
             <TabsHeader className="w-32">
               {dataValues.map(({ label, value }) => (
                 <Tab key={value} value={value}>

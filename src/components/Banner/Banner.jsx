@@ -5,16 +5,16 @@ import { Fade } from "react-awesome-reveal";
 
 const Banner = () => {
   return (
-    <section id="banner" className="container flex flex-wrap mx-auto mb-20 lg:mb-24">
-      <div className="px-3 order-2 mt-14 w-full sm:w-1/2 sm:order-1">
+    <section id="banner" className="container flex flex-wrap mx-auto mb-20">
+      <div className="px-3 mt-14 w-full md:w-1/2 lg:w-1/2">
         <Fade >
-          <h1 className="text-5xl text-center">Indicadores <br /><span className="roboto"><span className="g-color">Económicos</span> <br /> <span className="g-color">Chile</span></span></h1>
+          <h1 className="text-5xl text-center lg:text-left">Indicadores <br /><span className="roboto"><span className="g-color">Económicos</span> <br /> <span className="g-color">Chile</span></span></h1>
         </Fade>
-        <p className="my-5 text-center">
+        <p className="my-5 text-center lg:text-left">
           ¿Quieres estar siempre al tanto de los últimos valores económicos
           clave en Chile? ¡Nuestra extensión para Chrome te tiene cubierto!
         </p>
-        <div className="w-full flex justify-center">                    
+        <div className="w-full flex justify-center lg:justify-start">                    
             <a
               href="https://chromewebstore.google.com/detail/indicadores-econ%C3%B3micos-ch/ammnbjfbmidllmfjicddmdilkioodpld"
               target="blank"
@@ -26,11 +26,11 @@ const Banner = () => {
             </a>
         </div>
       </div>
-      <div className="hidden order-1 w-full sm:w-1/2 sm:oreder-2">
+      <div className="hidden w-full md:flex lg:w-1/2">
         <img
           src={bgImageRight}
           alt="bg image decoration"
-          className="hidden md:opacity-50 md:block md:absolute md:right-0 md:-z-10 md:top-0 lg:opacity-100"
+          className="hidden md:block md:absolute md:-right-44 md:-z-10 md:top-0 lg:-right-0"
         />
         <img
           src={rocketImage}
