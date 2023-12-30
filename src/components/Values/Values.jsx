@@ -15,7 +15,7 @@ const Values = () => {
         <p className="text-2xl">{date}</p>
         <hr className="w-full border border-teal-100"/>
       </Fade>
-      <div className="w-full flex flex-row flex-wrap gap-2 justify-center pt-7 md:gap-8">
+      <div className="w-full flex flex-row flex-wrap gap-4 justify-center pt-7 md:gap-8">
         {
           data && (
             <Slide direction="left">

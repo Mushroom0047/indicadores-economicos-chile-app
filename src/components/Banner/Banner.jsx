@@ -35,7 +35,7 @@ const Banner = () => {
         <img
           src={rocketImage}
           alt="rocket image decoration"
-          className="absolute top-0 -z-10 -right-36 opacity-50 blur md:blur-none overflow-x-hidden md:-right-36 md:opacity-100 lg:relative lg:-top-10"
+          className="absolute top-0 -z-10 -right-36 opacity-50 blur md:blur-none overflow-x-hidden md:-right-36 md:opacity-100 lg:relative lg:top-10"
           id="rocket"
         />
       </div>

@@ -18,7 +18,7 @@ const CurrencyValue = ({ title, data, load, error }) => {
   }
 
   return (
-    <div className='w-52 h-52 rounded-xl text-center flex flex-col shadow-xl justify-center'>
+    <div className='w-40 h-40 rounded-xl text-center flex flex-col shadow-xl justify-center md:w-52 md:h-52 '>
       {load && <Spinner color="teal" className="h-6 w-6 mx-auto"/>}
       {error && <h3>Error al obtener datos</h3>}
       {!error && !load && data && (
