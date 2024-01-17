@@ -13,7 +13,7 @@ import RocketGirl from "../../assets/rocket-girl.webp"
           <img
             src={RocketGirl}
             alt="decoration image rocket girl"
-            className="md:absolute md:-right-64 lg:right-0"
+            className="md:absolute md:-right-64 lg:-right-32 xl:right-0"
             id="rocket-girl"
             />
         </div>

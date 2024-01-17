@@ -37,7 +37,7 @@ const Converter = () => {
   ];
   return (
     <div className="w-full flex flex-wrap justify-center" id="convertidor">
-      <div className="w-full bg-teal-300 py-16 px-0 md:px-28">
+      <div className="w-full bg-teal-300 py-16 px-0 md:px-28 lg:px-10">
         <div className="text-center w-full py-8">
           <h2 className="text-white text-5xl">CONVERTIDOR</h2>
         </div>

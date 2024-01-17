@@ -47,11 +47,11 @@ const Chart = () => {
         <img
           src={imgChart}
           alt="decoration image charts"
-          className='absolute left-1/2 md:-left-44 lg:left-40'
+          className='absolute left-1/2 md:-left-44 lg:-left-32 xl:left-20'
           id="chart-character"
         />
       </div>    
-      <div className="w-full text-center bg-global-blue py-16 md:w-3/4 md:px-4 lg:w-1/2 lg:px-20 lg:container lg:py-4">
+      <div className="w-full text-center bg-global-blue py-16 md:w-3/4 md:px-4 lg:w-full lg:px-20 lg:container lg:py-4 xl:w-1/2">
         <h2 className='text-center text-5xl py-5 text-white'>GRÁFICOS</h2>
         <Tabs id="custom-animation" value="uf" className='px-2 w-full '>
           <TabsHeader>
