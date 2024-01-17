@@ -1,11 +1,9 @@
 import Footer from "../components/Footer/Footer"
-import Header from "../components/Header/Header"
 
 const PrivacyPolicy = () => {
   const fechaHoy = '29 de noviembre de 2023';
   return (
     <>
-      <Header />
       <section className="container mx-auto mb-32">
         <h1 className="text-center pb-10">POLÍTICA DE PRIVACIDAD</h1>
         <p>La extensión <b>"Indicadores Económicos Chile"</b> recopila y muestra datos económicos provenientes del sitio web <a className="text-teal-300" href="https://mindicador.cl/" target="blank">https://mindicador.cl/</a>. Queremos informarte que los datos presentados a través de esta extensión son obtenidos de fuentes externas y no son responsabilidad directa de esta extensión.</p>
